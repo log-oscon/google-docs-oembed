@@ -18,7 +18,7 @@ Registers an oEmbed handler for Google Docs and adds it to the whitelist, allowi
 
 ### Usage ###
 
-To embed a Google Doc into a post or page:
+To embed a Google Doc into a post or page:  
 1. Open the document on Google Drive  
 2. Select the Publish to the Web under the File menu  
 3. Then copy the link and paste it into the content area. Make sure the URL is on its own line and not hyperlinked (clickable when viewing the post)  
