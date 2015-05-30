@@ -13,7 +13,7 @@ Embed Google documents, spreadsheets and presentations in your posts or pages.
 
 Registers an oEmbed handler for Google Docs and adds it to the whitelist, allowing all users who can write posts/pages to embed documents, spreadsheets and presentations.  
 
-[Issues](https://github.com/log-oscon/google-docs-oembed/issues)  
+[Bug report](https://github.com/log-oscon/google-docs-oembed/issues)  
 [Source](https://github.com/log-oscon/google-docs-oembed)  
 
 ### Usage ###
