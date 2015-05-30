@@ -1,0 +1,25 @@
+{
+  "name": "google-docs-oembed",
+  "version": "1.0.0",
+  "description": "Embed Google documents, spreadsheets and presentations in your posts or pages.",
+  "license": "GPL",
+  "repository": "log-oscon/google-docs-oembed",
+  "author": [
+    {
+      "name": "Sérgio Santos",
+      "email": "me@s3rgiosan.com",
+      "homepage": "https://github.com/s3rgiosan"
+    },
+    {
+      "name": "log.OSCON, Lda.",
+      "email": "engenharia@log.pt",
+      "homepage": "http://log.pt/"
+    }
+  ],
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-readme-to-markdown": "^0.1.1-1",
+    "require-dir": "^0.3.0"
+  },
+  "dependencies": {}
+}
