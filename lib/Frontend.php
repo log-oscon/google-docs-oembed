@@ -3,7 +3,7 @@
 /**
  * The public-facing functionality of the plugin.
  *
- * @link       http://example.com
+ * @link       https://github.com/log-oscon/google-docs-oembed/
  * @since      1.0.0
  *
  * @package    GoogleDocsOembed
