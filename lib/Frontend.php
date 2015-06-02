@@ -116,7 +116,7 @@ class Frontend {
 			\esc_attr( $width ),
 			\esc_attr( $height ),
 			\esc_url( $base_url ),
-			\esc_attr( $extra )
+			$extra
 		), $matches, $attr, $url, $rawattr );
 
 	}
