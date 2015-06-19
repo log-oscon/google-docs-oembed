@@ -46,3 +46,8 @@ Another option is to wrap the URL in the [embed] shortcode:
 3. Upload the `google-docs-oembed` directory to the `/wp-content/plugins/` directory
 4. Activate the plugin in the Plugin dashboard
 
+
+## Upgrade Notice ##
+
+### 1.0 ###
+Initial release.  

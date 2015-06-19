@@ -50,3 +50,8 @@ Another option is to wrap the URL in the [embed] shortcode:
 
 = 1.0.0 =
 * Initial release.  
+
+== Upgrade Notice ==
+
+= 1.0 =  
+Initial release.  
