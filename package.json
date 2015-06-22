@@ -1,6 +1,6 @@
 {
   "name": "google-docs-oembed",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Embed Google documents, spreadsheets and presentations in your posts or pages.",
   "license": "GPL-2.0+",
   "repository": "log-oscon/google-docs-oembed",
