@@ -1,9 +1,9 @@
 {
   "name": "google-docs-oembed",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Embed Google documents, spreadsheets and presentations in your posts or pages.",
   "license": "GPL-2.0+",
-  "repository": "log-oscon/google-docs-oembed",
+  "repository": "https://github.com/log-oscon/google-docs-oembed.git",
   "author": [
     {
       "name": "Sérgio Santos",
@@ -19,8 +19,12 @@
   "devDependencies": {
     "gulp": "^3.8.11",
     "gulp-composer": "^0.1.0",
-    "gulp-readme-to-markdown": "^0.1.1-1",
+    "gulp-readme-to-markdown": "^0.1.1",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.0.0",
     "require-dir": "^0.3.0"
   },
-  "dependencies": {}
+  "scripts": {
+    "jshint": "jshint --reporter node_modules/jshint-stylish/index.js gulpfile.js gulp/*"
+  }
 }

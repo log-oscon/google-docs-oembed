@@ -48,6 +48,9 @@ Another option is to wrap the URL in the [embed] shortcode:
 
 == Changelog ==
 
+= 1.0.3 =
+* Minor changes.
+
 = 1.0.2 =
 * Check if autoloader exists before requiring.  
 

@@ -1,8 +1,8 @@
 (function() {
   'use strict';
 
-  var gulp = require( 'gulp' );
+  var gulp = require('gulp');
 
-  gulp.task( 'default', [ 'build' ]);
+  gulp.task('default', ['build']);
 
 })();
