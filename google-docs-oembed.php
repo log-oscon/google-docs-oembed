@@ -3,7 +3,7 @@
 /**
  * Google Docs oEmbed
  *
- * Registers an oEmbed handler for Google Docs and adds it to the whitelist, 
+ * Registers an oEmbed handler for Google Docs and adds it to the whitelist,
  * allowing all users who can write posts/pages to embed documents, spreadsheets and presentations.
  *
  * @link              http://log.pt/
@@ -14,7 +14,7 @@
  * Plugin Name:       Google Docs oEmbed
  * Plugin URI:        https://github.com/log-oscon/google-docs-oembed/
  * Description:       Embed Google documents, spreadsheets and presentations in your posts or pages.
- * Version:           1.0.2
+ * Version:           1.0.3
  * Author:            log.OSCON, Lda.
  * Author URI:        http://log.pt/
  * License:           GPL-2.0+
