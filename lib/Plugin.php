@@ -35,27 +35,27 @@ class Plugin {
 	 * The loader that's responsible for maintaining and registering all hooks that power
 	 * the plugin.
 	 *
-	 * @since    1.0.0
-	 * @access   protected
-	 * @var      GoogleDocsOembed_Loader    $loader    Maintains and registers all hooks for the plugin.
+	 * @since     1.0.0
+	 * @access    protected
+	 * @var       GoogleDocsOembed_Loader    $loader    Maintains and registers all hooks for the plugin.
 	 */
 	protected $loader;
 
 	/**
 	 * The unique identifier of this plugin.
 	 *
-	 * @since    1.0.0
-	 * @access   protected
-	 * @var      string    $pluginname    The string used to uniquely identify this plugin.
+	 * @since     1.0.0
+	 * @access    protected
+	 * @var       string    $pluginname    The string used to uniquely identify this plugin.
 	 */
 	protected $pluginname = 'google-docs-oembed';
 
 	/**
 	 * The current version of the plugin.
 	 *
-	 * @since    1.0.0
-	 * @access   protected
-	 * @var      string    $version    The current version of the plugin.
+	 * @since     1.0.0
+	 * @access    protected
+	 * @var       string    $version    The current version of the plugin.
 	 */
 	protected $version = '1.0.0';
 
