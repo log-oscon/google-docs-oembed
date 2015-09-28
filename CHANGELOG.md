@@ -1,5 +1,12 @@
 # Changelog #
 
+## 1.0.4 ##
+* Added composer.lock to repo.  
+* Added vendor folder to SVN repo.  
+
+## 1.0.3 ##
+* Minor changes.
+
 ## 1.0.2 ##
 * Check if autoloader exists before requiring.  
 
