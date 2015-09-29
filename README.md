@@ -1,4 +1,6 @@
 # Google Docs oEmbed #
+
+[![Join the chat at https://gitter.im/log-oscon/google-docs-oembed](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/log-oscon/google-docs-oembed?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 **Contributors:** s3rgiosan, log_oscon  
 **Tags:** google, docs, embed, oembed, document, spreadsheet, presentation  
 **Requires at least:** 4.0  
