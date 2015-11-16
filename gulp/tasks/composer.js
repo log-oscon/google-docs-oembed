@@ -8,7 +8,7 @@
 
     composer({
       cwd: './',
-      bin: 'composer'
+      bin: 'composer --no-dev'
     });
 
   });
