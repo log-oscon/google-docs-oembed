@@ -7,7 +7,7 @@
  * @since      1.0.0
  *
  * @package    GoogleDocsOembed
- * @subpackage GoogleDocsOembed/Frontend
+ * @subpackage GoogleDocsOembed/lib
  */
 
 namespace logoscon\GoogleDocsOembed;
@@ -19,7 +19,7 @@ namespace logoscon\GoogleDocsOembed;
  * enqueue the dashboard-specific stylesheet and JavaScript.
  *
  * @package    GoogleDocsOembed
- * @subpackage GoogleDocsOembed/Frontend
+ * @subpackage GoogleDocsOembed/lib
  * @author     log.OSCON, Lda. <engenharia@log.pt>
  */
 class Frontend {
@@ -72,7 +72,7 @@ class Frontend {
 
 		$base_url = $matches[0];
 		$doc_type = $matches[2];
-		$extra    = '';		
+		$extra    = '';
 		$width    = isset( $rawattr['width'] )  ? absint( $rawattr['width'] )  : 0;
 		$height   = isset( $rawattr['height'] ) ? absint( $rawattr['height'] ) : 0;
 

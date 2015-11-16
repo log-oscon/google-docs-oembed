@@ -7,7 +7,7 @@
  * @since      1.0.0
  *
  * @package    GoogleDocsOembed
- * @subpackage GoogleDocsOembed/includes
+ * @subpackage GoogleDocsOembed/lib
  */
 
 namespace logoscon\GoogleDocsOembed;
@@ -20,7 +20,7 @@ namespace logoscon\GoogleDocsOembed;
  * run function to execute the list of actions and filters.
  *
  * @package    GoogleDocsOembed
- * @subpackage GoogleDocsOembed/includes
+ * @subpackage GoogleDocsOembed/lib
  * @author     log.OSCON, Lda. <engenharia@log.pt>
  */
 class Loader {

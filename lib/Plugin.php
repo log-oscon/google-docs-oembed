@@ -10,7 +10,7 @@
  * @since      1.0.0
  *
  * @package    GoogleDocsOembed
- * @subpackage GoogleDocsOembed/includes
+ * @subpackage GoogleDocsOembed/lib
  */
 
 namespace logoscon\GoogleDocsOembed;
@@ -26,7 +26,7 @@ namespace logoscon\GoogleDocsOembed;
  *
  * @since      1.0.0
  * @package    GoogleDocsOembed
- * @subpackage GoogleDocsOembed/includes
+ * @subpackage GoogleDocsOembed/lib
  * @author     log.OSCON, Lda. <engenharia@log.pt>
  */
 class Plugin {
@@ -37,7 +37,7 @@ class Plugin {
 	 *
 	 * @since     1.0.0
 	 * @access    protected
-	 * @var       GoogleDocsOembed_Loader    $loader    Maintains and registers all hooks for the plugin.
+	 * @var       Loader    $loader    Maintains and registers all hooks for the plugin.
 	 */
 	protected $loader;
 
@@ -57,7 +57,7 @@ class Plugin {
 	 * @access    protected
 	 * @var       string    $version    The current version of the plugin.
 	 */
-	protected $version = '1.0.0';
+	protected $version = '1.0.4';
 
 	/**
 	 * Define the core functionality of the plugin.
@@ -111,7 +111,7 @@ class Plugin {
 	 * The reference to the class that orchestrates the hooks with the plugin.
 	 *
 	 * @since     1.0.0
-	 * @return    GoogleDocsOembed_Loader    Orchestrates the hooks of the plugin.
+	 * @return    Loader    Orchestrates the hooks of the plugin.
 	 */
 	public function get_loader() {
 		return $this->loader;
