@@ -48,6 +48,10 @@ Another option is to wrap the URL in the [embed] shortcode:
 
 == Changelog ==
 
+= 1.0.5 =
+* Added GitHub Updater support.  
+* Added Update supported WordPress version.  
+
 = 1.0.4 =
 * Added composer.lock to repo.  
 * Added vendor folder to SVN repo.  
