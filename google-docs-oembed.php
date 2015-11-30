@@ -21,6 +21,8 @@
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       google-docs-oembed
  * Domain Path:       /languages
+ * GitHub Plugin URI: https://github.com/log-oscon/google-docs-oembed
+ * GitHub Branch:     master
  */
 
 if ( file_exists( dirname( __FILE__ ) . '/vendor/autoload.php' ) ) {
