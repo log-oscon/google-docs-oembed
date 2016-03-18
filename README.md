@@ -1,11 +1,11 @@
 # Google Docs oEmbed #
-**Contributors:** s3rgiosan, log_oscon  
-**Tags:** google, docs, embed, oembed, document, spreadsheet, presentation  
-**Requires at least:** 4.0  
-**Tested up to:** 4.3.1  
-**Stable tag:** trunk  
-**License:** GPLv2 or later  
-**License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
+**Contributors:** s3rgiosan, log_oscon    
+**Tags:** google, docs, embed, oembed, document, spreadsheet, presentation    
+**Requires at least:** 4.0    
+**Tested up to:** 4.3.1    
+**Stable tag:** trunk    
+**License:** GPLv2 or later    
+**License URI:** http://www.gnu.org/licenses/gpl-2.0.html    
 
 Embed Google documents, spreadsheets and presentations in your posts or pages.  
 
@@ -46,6 +46,35 @@ Another option is to wrap the URL in the [embed] shortcode:
 3. Upload the `google-docs-oembed` directory to the `/wp-content/plugins/` directory
 4. Activate the plugin in the Plugin dashboard
 
+## Changelog ##
+
+### 1.0.7 ###
+* Minor changes.  
+* Added language file.  
+
+### 1.0.6 ###
+* Fix PSR-4 loader conflict with older implementation.  
+
+### 1.0.5 ###
+* Added GitHub Updater support.  
+* Added Update supported WordPress version.  
+
+### 1.0.4 ###
+* Added composer.lock to repo.  
+* Added vendor folder to SVN repo.  
+
+### 1.0.3 ###
+* Minor changes.
+
+### 1.0.2 ###
+* Check if autoloader exists before requiring.  
+
+### 1.0.1 ###
+* Removed an esc_attr() incorrectly called on $extra.  
+* Added a build task with composer support.  
+
+### 1.0.0 ###
+* Initial release.  
 
 ## Upgrade Notice ##
 

@@ -48,6 +48,10 @@ Another option is to wrap the URL in the [embed] shortcode:
 
 == Changelog ==
 
+= 1.0.7 =
+* Minor changes.  
+* Added language file.  
+
 = 1.0.6 =
 * Fix PSR-4 loader conflict with older implementation.  
 
