@@ -1,9 +1,11 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/55f91826e8aa4a819d5c5cd3ff0e80b1)](https://www.codacy.com/app/s3rgiosan/google-docs-oembed?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=s3rgiosan/google-docs-oembed&amp;utm_campaign=Badge_Grade)
+
 # Google Docs oEmbed #
-**Contributors:** s3rgiosan, log_oscon    
+**Contributors:** [s3rgiosan](https://profiles.wordpress.org/s3rgiosan), [log_oscon](https://profiles.wordpress.org/log_oscon)  
 **Tags:** google, docs, embed, oembed, document, spreadsheet, presentation    
 **Requires at least:** 4.0    
-**Tested up to:** 4.3.1    
-**Stable tag:** 1.0.7    
+**Tested up to:** 4.6    
+**Stable tag:** 1.0.8    
 **License:** GPLv2 or later    
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html    
 
@@ -47,6 +49,10 @@ Another option is to wrap the URL in the [embed] shortcode:
 4. Activate the plugin in the Plugin dashboard
 
 ## Changelog ##
+
+### 1.0.8 ###
+* Added Codacy (a tool for automated code review) badge.  
+* Removed the loader class.  
 
 ### 1.0.7 ###
 * Minor changes.  

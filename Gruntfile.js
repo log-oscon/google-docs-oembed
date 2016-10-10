@@ -3,12 +3,15 @@ module.exports = function (grunt) {
   var pkg = grunt.file.readJSON('package.json');
 
   var config = {
-    author:      'Sérgio Santos <me@s3rgiosan.com>',
+    author:      'log.OSCON, Lda. <engenharia@log.pt>',
     support:     'https://github.com/log-oscon/google-docs-oembed/issues',
     pluginSlug:  'google-docs-oembed',
     mainFile:    'google-docs-oembed',
     textDomain:  'google-docs-oembed',
-    potFilename: 'google-docs-oembed'
+    potFilename: 'google-docs-oembed',
+    badges:      {
+      codacy: '[![Codacy Badge](https://api.codacy.com/project/badge/Grade/55f91826e8aa4a819d5c5cd3ff0e80b1)](https://www.codacy.com/app/s3rgiosan/google-docs-oembed?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=s3rgiosan/google-docs-oembed&amp;utm_campaign=Badge_Grade)',
+    },
   };
 
   var distFiles = [
@@ -33,7 +36,6 @@ module.exports = function (grunt) {
     '!tests/**',
   ];
 
-  // Project configuration
   grunt.initConfig({
 
     pkg: pkg,
@@ -112,9 +114,18 @@ module.exports = function (grunt) {
 
     wp_readme_to_markdown: {
       main: {
-          files: {
-            'README.md': 'README.txt'
+        files: {
+          'README.md': 'README.txt'
+        },
+        options: {
+          post_convert: function(readme) {
+            var badges = '';
+            Object.keys(config.badges).forEach(function(key) {
+              badges += config.badges[key] + "\n";
+            });
+            return badges + "\n" + readme;
           },
+        },
       },
     },
 
@@ -124,7 +135,6 @@ module.exports = function (grunt) {
       ]
     },
 
-    // Copy the plugin to build directory
     copy: {
       main: {
         expand: true,
@@ -158,10 +168,15 @@ module.exports = function (grunt) {
 
   });
 
-  // Load tasks
   require('load-grunt-tasks')(grunt);
 
-  // Register tasks
+  grunt.registerTask('default', [
+    'clean',
+    'composer:install',
+    'pot',
+    'readme',
+  ]);
+
   grunt.registerTask('readme', [
     'wp_readme_to_markdown',
   ]);
@@ -183,10 +198,10 @@ module.exports = function (grunt) {
 
   grunt.registerTask('deploy', [
     'pot',
-    'wp_readme_to_markdown',
+    'readme',
     'build',
     'wp_deploy',
+    'clean',
   ]);
 
-  grunt.util.linefeed = '\n';
 };

@@ -32,55 +32,33 @@ namespace logoscon\GoogleDocsOembed;
 class Plugin {
 
 	/**
-	 * The loader that's responsible for maintaining and registering all hooks that power
-	 * the plugin.
-	 *
-	 * @since     1.0.0
-	 * @access    protected
-	 * @var       Loader    $loader    Maintains and registers all hooks for the plugin.
-	 */
-	protected $loader;
-
-	/**
 	 * The unique identifier of this plugin.
 	 *
-	 * @since     1.0.0
-	 * @access    protected
-	 * @var       string    $pluginname    The string used to uniquely identify this plugin.
+	 * @since  1.0.0
+	 * @access protected
+	 * @var    string
 	 */
-	protected $pluginname = 'google-docs-oembed';
+	protected $name;
 
 	/**
 	 * The current version of the plugin.
 	 *
-	 * @since     1.0.0
-	 * @access    protected
-	 * @var       string    $version    The current version of the plugin.
+	 * @since  1.0.0
+	 * @access protected
+	 * @var    string
 	 */
-	protected $version = '1.0.7';
+	protected $version;
 
 	/**
 	 * Define the core functionality of the plugin.
 	 *
-	 * Create an instance of the loader which will be used to register the hooks
-	 * with WordPress.
-	 *
-	 * @since    1.0.0
+	 * @since 1.0.0
+	 * @param string $name    Plugin name.
+	 * @param string $version Plugin version.
 	 */
-	public function __construct() {
-		$this->loader = new Loader();
-	}
-
-	/**
-	 * Register all of the hooks related to the public-facing functionality
-	 * of the plugin.
-	 *
-	 * @since     1.0.0
-	 * @access    private
-	 */
-	private function define_frontend_hooks() {
-		$plugin_frontend = new Frontend( $this );
-		$this->loader->add_action( 'init', $plugin_frontend, 'wp_oembed_register_google_docs' );
+	public function __construct( $name, $version ) {
+		$this->name    = $name;
+		$this->version = $version;
 	}
 
 	/**
@@ -93,7 +71,6 @@ class Plugin {
 	 */
 	public function run() {
 		$this->define_frontend_hooks();
-		$this->loader->run();
 	}
 
 	/**
@@ -103,18 +80,8 @@ class Plugin {
 	 * @since     1.0.0
 	 * @return    string    The name of the plugin.
 	 */
-	public function get_plugin_name() {
-		return $this->pluginname;
-	}
-
-	/**
-	 * The reference to the class that orchestrates the hooks with the plugin.
-	 *
-	 * @since     1.0.0
-	 * @return    Loader    Orchestrates the hooks of the plugin.
-	 */
-	public function get_loader() {
-		return $this->loader;
+	public function get_name() {
+		return $this->name;
 	}
 
 	/**
@@ -127,4 +94,15 @@ class Plugin {
 		return $this->version;
 	}
 
+	/**
+	 * Register all of the hooks related to the public-facing functionality
+	 * of the plugin.
+	 *
+	 * @since     1.0.0
+	 * @access    private
+	 */
+	private function define_frontend_hooks() {
+		$frontend = new Frontend( $this );
+		\add_action( 'init', array( $frontend, 'wp_oembed_register_google_docs' ) );
+	}
 }

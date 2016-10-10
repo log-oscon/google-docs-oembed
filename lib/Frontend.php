@@ -52,7 +52,12 @@ class Frontend {
 	 * @since    1.0.0
 	 */
 	public function wp_oembed_register_google_docs() {
-		\wp_embed_register_handler( 'google_docs', '#https?:\/\/(www\.)?docs.google.com\/(document|spreadsheets|presentation)\/.*#i', array( $this, 'wp_oembed_handler_google_docs' ), true );
+		\wp_embed_register_handler(
+			'google_docs',
+			'#https?:\/\/(www\.)?docs.google.com\/(document|spreadsheets|presentation)\/.*#i',
+			array( $this, 'wp_oembed_handler_google_docs' ),
+			true
+		);
 	}
 
 	/**
@@ -118,6 +123,5 @@ class Frontend {
 			\esc_url( $base_url ),
 			$extra
 		), $matches, $attr, $url, $rawattr );
-
 	}
 }
