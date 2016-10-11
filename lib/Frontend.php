@@ -75,36 +75,14 @@ class Frontend {
 	 */
 	public function wp_oembed_handler_google_docs( $matches, $attr, $url, $rawattr ) {
 
-		$base_url = $matches[0];
-		$doc_type = $matches[2];
-		$extra    = '';
+		$base_url = $this->google_docs_base_url( $matches, $attr, $url, $rawattr );
+		$extra    = $this->google_docs_extra_attributes( $matches, $attr, $url, $rawattr );
 		$width    = isset( $rawattr['width'] )  ? absint( $rawattr['width'] )  : 0;
 		$height   = isset( $rawattr['height'] ) ? absint( $rawattr['height'] ) : 0;
 
 		if ( ! $width || ! $height ) {
 			list( $width, $height ) = \wp_expand_dimensions( 500, 750, $attr['width'], $attr['height'] );
 		}
-
-		switch ( $doc_type ) {
-			case 'document':
-				$base_url .= '?embedded=true';
-				break;
-
-			case 'spreadsheets':
-				$base_url .= '?widget=true&amp;headers=false';
-				break;
-
-			case 'presentation':
-				$base_url = str_replace( '/pub', '/embed', $base_url );
-				$extra    = 'allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"';
-				break;
-
-			default:
-				break;
-		}
-
-		$base_url = \apply_filters( 'oembed_google_docs_base_url', $base_url, $matches, $attr, $rawattr );
-		$extra    = \apply_filters( 'oembed_google_docs_extra', $extra, $matches, $attr, $rawattr );
 
 		/**
 		 * Filter the Google Docs oEmbed output.
@@ -123,5 +101,52 @@ class Frontend {
 			\esc_url( $base_url ),
 			$extra
 		), $matches, $attr, $url, $rawattr );
+	}
+
+	/**
+	 * Get the document iframe base url.
+	 *
+	 * @since     1.0.9
+	 * @access    private
+	 * @param     array     $matches    The RegEx matches.
+	 * @param     array     $attr       Embed attributes.
+	 * @param     array     $rawattr    The original unmodified attributes.
+	 * @return    string                The document iframe base url.
+	 */
+	private function google_docs_base_url( $matches, $attr, $rawattr ) {
+
+		$doc_type = $matches[2];
+		$base_url = $matches[0];
+
+		if ( $doc_type === 'document' ) {
+			$base_url .= '?embedded=true';
+		} else if ( $doc_type === 'spreadsheets' ) {
+			$base_url .= '?widget=true&amp;headers=false';
+		} else if ( $doc_type === 'presentation' ) {
+			$base_url = str_replace( '/pub', '/embed', $base_url );
+		}
+
+		return \apply_filters( 'oembed_google_docs_base_url', $base_url, $matches, $attr, $rawattr );
+	}
+
+	/**
+	 * Get the document iframe extra attributes.
+	 *
+	 * @since     1.0.9
+	 * @access    private
+	 * @param     array     $matches    The RegEx matches.
+	 * @param     array     $attr       Embed attributes.
+	 * @param     array     $rawattr    The original unmodified attributes.
+	 * @return    string                The document iframe extra attributes.
+	 */
+	private function google_docs_extra_attributes( $matches, $attr, $rawattr ) {
+
+		$extra = '';
+
+		if ( $matches[2] === 'presentation' ) {
+			$extra = 'allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"';
+		}
+
+		return \apply_filters( 'oembed_google_docs_extra', $extra, $matches, $attr, $rawattr );
 	}
 }

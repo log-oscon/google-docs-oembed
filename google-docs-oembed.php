@@ -14,7 +14,7 @@
  * Plugin Name:       Google Docs oEmbed
  * Plugin URI:        https://github.com/log-oscon/google-docs-oembed/
  * Description:       Embed Google documents, spreadsheets and presentations in your posts or pages.
- * Version:           1.0.8
+ * Version:           1.0.9
  * Author:            log.OSCON, Lda.
  * Author URI:        http://log.pt/
  * License:           GPL-2.0+
@@ -42,6 +42,6 @@ if ( ! defined( 'WPINC' ) ) {
  * @since    1.0.0
  */
 \add_action( 'plugins_loaded', function () {
-	$plugin = new GoogleDocsOembed\Plugin( 'google-docs-oembed', '1.0.8' );
+	$plugin = new GoogleDocsOembed\Plugin( 'google-docs-oembed', '1.0.9' );
 	$plugin->run();
 } );
