@@ -1,4 +1,4 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/55f91826e8aa4a819d5c5cd3ff0e80b1)](https://www.codacy.com/app/s3rgiosan/google-docs-oembed?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=s3rgiosan/google-docs-oembed&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d50c20fa4e354dea8f7f8219cf451993)](https://www.codacy.com/app/s3rgiosan/google-docs-oembed?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=log-oscon/google-docs-oembed&amp;utm_campaign=Badge_Grade)
 
 # Google Docs oEmbed #
 **Contributors:** [s3rgiosan](https://profiles.wordpress.org/s3rgiosan), [log_oscon](https://profiles.wordpress.org/log_oscon)  
