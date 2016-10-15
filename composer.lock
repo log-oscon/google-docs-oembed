@@ -10,16 +10,16 @@
     "packages-dev": [
         {
             "name": "dangoodman/composer-for-wordpress",
-            "version": "1.0.0",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dangoodman/composer-for-wordpress.git",
-                "reference": "f7137989fd4b1be4b004dfd7d7bdec8e8d4c6a79"
+                "reference": "af0a36201ffe48e7ffcf4d71e6d7ff6eea65d5f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dangoodman/composer-for-wordpress/zipball/f7137989fd4b1be4b004dfd7d7bdec8e8d4c6a79",
-                "reference": "f7137989fd4b1be4b004dfd7d7bdec8e8d4c6a79",
+                "url": "https://api.github.com/repos/dangoodman/composer-for-wordpress/zipball/af0a36201ffe48e7ffcf4d71e6d7ff6eea65d5f8",
+                "reference": "af0a36201ffe48e7ffcf4d71e6d7ff6eea65d5f8",
                 "shasum": ""
             },
             "require": {
@@ -35,7 +35,7 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2016-01-20 15:04:55"
+            "time": "2016-06-30 20:48:40"
         }
     ],
     "aliases": [],

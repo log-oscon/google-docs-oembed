@@ -10,7 +10,11 @@ module.exports = function (grunt) {
     textDomain:  'google-docs-oembed',
     potFilename: 'google-docs-oembed',
     badges:      {
-      codacy: '[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d50c20fa4e354dea8f7f8219cf451993)](https://www.codacy.com/app/s3rgiosan/google-docs-oembed?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=log-oscon/google-docs-oembed&amp;utm_campaign=Badge_Grade)',
+      packagist_stable:    '[![Latest Stable Version](https://poser.pugx.org/logoscon/google-docs-oembed/v/stable)](https://packagist.org/packages/logoscon/google-docs-oembed)',
+      packagist_downloads: '[![Total Downloads](https://poser.pugx.org/logoscon/google-docs-oembed/downloads)](https://packagist.org/packages/logoscon/google-docs-oembed)',
+      packagist_license:   '[![License](https://poser.pugx.org/logoscon/google-docs-oembed/license)](https://packagist.org/packages/logoscon/google-docs-oembed)',
+      codacy_grade:        '[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d50c20fa4e354dea8f7f8219cf451993)](https://www.codacy.com/app/s3rgiosan/google-docs-oembed?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=log-oscon/google-docs-oembed&amp;utm_campaign=Badge_Grade)',
+      codeclimate_grade:   '[![Code Climate](https://codeclimate.com/github/log-oscon/google-docs-oembed/badges/gpa.svg)](https://codeclimate.com/github/log-oscon/google-docs-oembed)',
     },
   };
 
